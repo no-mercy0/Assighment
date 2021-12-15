@@ -1,0 +1,36 @@
+<h1 id = "tema">Sulayman Too</h1>
+<p id = "text">Welcome to Sulayman Too in Osh</p>
+<img id = "photo" src = "sulaymantoo.jpg" height = "400">
+<br>
+<button onclick = "change()">Next</button>
+
+<script>
+    function change(){
+        document.getElementById("photo").src = "jetioguz.jpg";
+        document.getElementById("tema").innerHTML = "Jeti Oguz";
+        document.getElementById("text").innerHTML = "Welcome to Jeti Oguz";
+        document.getElementById("text").style.color = "blue";
+        document.body.style.background = "wheat";
+    }
+</script>
+<button onclick="back()">Back</button>
+
+<script>
+    function back(){
+        document.getElementById("photo").src = "sulaymantoo.jpg";
+        document.getElementById("tema").innerHTML = "Sulayman Too";
+        document.getElementById("text").innerHTML = "Welcome to Sulayman Too in Osh";
+        document.getElementById("text").style.color = "green";
+        document.body.style.background = "light-blue";
+    }
+</script>
+
+<h1 id = "counter">0</h1>
+<button onclick = "plus()">add person to reservation</button>
+<script>
+    var c = 0;
+    function plus(){
+        c++;
+    document.getElementById("counter").innerHTML = c;
+    }
+</script>
