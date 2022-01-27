@@ -1,41 +1,108 @@
-<h1 id = "tema">Sulayman Too</h1>
-<p id = "text">Welcome to Sulayman Too in Osh</p>
-<img id = "photo" src = "sulaymantoo.jpg" height = "400">
-<br>
-<button onclick = "change()">Next</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<script>
-    function change(){
-        document.getElementById("photo").src = "jetioguz.jpg";
-        document.getElementById("tema").innerHTML = "Jeti Oguz";
-        document.getElementById("text").innerHTML = "Welcome to Jeti Oguz";
-        document.getElementById("text").style.color = "blue";
-        document.body.style.background = "wheat";
-    }
-</script>
-<button onclick="back()">Back</button>
+<div class = "fb">
+    <img src="img/cd2246d5d0f54f9a4316bd4d276764b2.webp" style = "width: 50px; height: 50px;" class = "logo">
+    <nav>
+        <ul class = "next">
+            <li><a href = "">Shortly about me</a></li>
+            <li><a href = "">Interests</a></li>
+            <li><a href = "">Friends</a></li>
+            <li><a href = "">Hobbies</a></li>
+        </ul>
+    </nav>
+    <a href = "#" class = "some"><button>My site</button></a>
+</div>
+<div class="main-slider">  
+    <img src="img/big-crowd-happy-people-isolate-on-white-K27Y3F.jpg"> <div class="centered"><h2>My name is Arnat. <br>This is my portfolio.</h2></div>
+   
+</div>
 
-<script>
-    function back(){
-        document.getElementById("photo").src = "sulaymantoo.jpg";
-        document.getElementById("tema").innerHTML = "Sulayman Too";
-        document.getElementById("text").innerHTML = "Welcome to Sulayman Too in Osh";
-        document.getElementById("text").style.color = "green";
-        document.body.style.background = "light-blue";
-    }
-</script>
 
-<h1 id = "counter">0</h1>
-<button onclick = "plus()">add person to reservation</button>
-<button onclick = "minus()">delete person from reservation</button>
-<script>
-    var c = 0;
-    function plus(){
-        c++;
-    document.getElementById("counter").innerHTML = c;
-    }
-    function minus(){
-        c--;
-    document.getElementById("counter").innerHTML = c;
-    }
-</script>
+<div class = "mid">
+    <h1 id = "about">Shortly about me</h1>
+    <div class = "text">
+        <h2>My name is Arnat. I'm 17y.o. I was born in 2004 in the Biskek city.
+            There are 2 people in my family. Me and my mom My mom's name is Jarkyn. 
+            I really love to spend time with my friends. I'm a student of Ala-Too. I study on second course of IT faculty. </h2>
+    </div>
+    <img src = "" class = "image">
+</div>
+
+<div class = "pen"><h1 id = "interests"></h1></div>
+    
+
+        <div class="important" onclick="next()">
+            <div class="contex">
+                <div class="contex-image"> <img src="img/bgj.jpg" id="image" ></div> 
+            
+                <button onclick="c()" class="point">next</button>
+                <button onclick="b()" class="point2">back</button>
+            
+                    <div class="text-of">
+                        <h1 id="main">Hobbies</h1> 
+                        <h3 id="text">My interests are all types of sport and games. </h3>
+                    </div>  
+            </div>
+        </div> 
+        
+            <script>
+                function c() {
+                    document.getElementById("main").innerHTML="Scince";
+                    document.getElementById("image").src="img/NOTE.jpg";
+                    document.getElementById("text").innerHTML="When I was child I usually was watching 'Da Vinci' and kept a lot of usefull information out.";
+                }
+                </script>
+            <script>
+                    function b() {
+                        document.getElementById('main').innerHTML="Self activities";
+                        document.getElementById("image").src="img/game.jpg";
+                        document.getElementById("text").innerHTML="I've been to over a hundred conferences about the natural environment, professionally oriented destinations, philanthropy, and many more. .";
+                    }
+                </script>
+        
+        
+        <div class="important" onclick="next()">
+            <div class="contex2">
+                <div> <img src="img/bg.png" id="image2" class="contex-image2" ></div> 
+                    <button onclick="d()" class="point">next</button>
+                    <button onclick="f()" class="point2">back</button>
+                        <div class="text-of2">
+        
+                            <h1 id="main2">Hobby</h1> 
+                            <h3 id="text2">My hobbies are drawing and some conferences that can upgrade my vision of the world. I love to spend time with my friends, it feels very good when you can be with your closest friends</h3>
+                         </div>  
+            </div>
+        </div> 
+        
+            <script>
+            function d() {
+                document.getElementById("main2").innerHTML="Relatives";
+                document.getElementById("image2").src="img/relative.jpg";
+                document.getElementById("text2").innerHTML="I have a lot of relatives as usual kyrgyz. When I was child we always visited our relatives,  so I were in a lot of places in Kyrgyzstan";
+            }
+                </script>
+            <script>
+            function f(){
+                document.getElementById("main2").innerHTML="Drawing";
+                document.getElementById("image2").src="img/painting.jpg";
+                document.getElementById("text2").innerHTML="I talk a lot with friends from other countries and discuss my daily life with them. I have friends from Chile, Russia, England. ."
+            }
+                </script>
+        
+        
+        <div class="footer"> 
+            <img src="img/istockphoto-1165857016-612x612.jpg" class="footerImg">
+        </div>
+        
+
+</body>
+</html>
